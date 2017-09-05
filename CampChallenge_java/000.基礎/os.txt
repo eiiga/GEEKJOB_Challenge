@@ -1,5 +1,5 @@
 OS : Windows10
-バージョン : 1607
-プロセッサ : Intel(R) Celeron(R) CPU N2840 @ 2.16GHz 2.16
-メモリー : 2.00GB
+ver. : 1607
+processor : Intel(R) Celeron(R) CPU N2840 @ 2.16GHz 2.16
+memory : 2.00GB
 
