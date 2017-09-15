@@ -44,8 +44,7 @@ public class date1 extends HttpServlet {
             SimpleDateFormat f = new SimpleDateFormat("yyyy年MM月dd日　HH時mm分ss秒");
             Date d = new Date();
             d = f.parse("2016年01月01日　00時00分00秒");
-            String s =f.format(d);
-            out.print(s);
+            out.print(d.getTime());
             
             out.println("<!DOCTYPE html>");
             out.println("<html>");
