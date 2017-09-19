@@ -12,22 +12,21 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <!--<form action = "./nyuuryokufield.jsp" method="post">-->
+        <form action = "./data.jsp" method="post">
          <!--form--> 
             名前
             <br>
-            <input type="text" name="txtName">
+            <input type="text" name="名前">
             <br>
             男：
-            <input type="radio" name="btnTest">
+            <input type="radio" name="性別" value="男">
             女：
-            <input type="radio" name="btnTest">
+            <input type="radio" name="性別" value="女">
             <br>
             趣味 
             <br>
-            <input type="text" name="txtName">
-            <input type="text" name="txtName">
-            <input type="text" name="txtName">
+            <textarea cols ="30" rows ="5" name="趣味"></textarea>
+            
             <br>
             <input type="submit" name="btnSubmit">
             <h1></h1>
