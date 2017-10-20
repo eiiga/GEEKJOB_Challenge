@@ -1,0 +1,25 @@
+巨大なソースの修正：第二段階　修正箇所
+・search：値の渡しをGETにする。
+
+・searchresult：IDが昇順に表示
+		名前、生年、種別、登録日のみ表示
+		名前がクリック可能になっており、resultdetailへ移動
+		何も入力されていないときは全権表示
+
+・resultdetail：クリックされた名前の情報を全て表示
+		updateとdeleteボタンを作成
+
+・update：データを更新
+	　構成をinsertと同じにし、resultdetailと同じ内容を表示
+	　送信およびresultdetailに戻るボタンを作成
+
+・updateresult：DBに更新
+		更新したデータ＋現在時刻の表示
+		resultdetailに戻るボタン
+
+・delete：resultdetailのデータを全件削除
+	　はい→deleteresultへ
+	　いいえ→resultdetailへ
+
+・deleteresult：データを削除
+		searchresultへ戻るボタンの作成（検索結果付き）
