@@ -12,7 +12,10 @@
     int month = m+1;
     int day = birthday.get(Calendar.DAY_OF_MONTH);
     String userID = String.valueOf(udd.getUserID());
+       
 %>
+ 
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -20,11 +23,15 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JUMS変更画面</title>
     </head>
+    <%
+        
+     %>
+        
     <body>
-    <form action="UpdateResult" method="POST">
+    <form action="UpdateResult" method="POST" name="update" >
         <input type="hidden" name="userID" value="<%= userID %>">
         名前:
-        <input type="text" name="name" value="<%= udd.getName() %>">
+        <input type="text" name="name" value="<%= udd.getName() %>" required>
         <br><br>
 
         生年月日:　
@@ -56,12 +63,12 @@
         <br>
 
         電話番号:
-        <input type="text" name="tell" value="<%= udd.getTell() %>">
+        <input type="text" name="tell" value="<%= udd.getTell() %>" required>
         <br><br>
 
         自己紹介文
         <br>
-        <textarea name="comment" rows=10 cols=50 style="resize:none" wrap="hard"><%= udd.getComment() %></textarea><br><br>
+        <textarea name="comment" rows=10 cols=50 style="resize:none" wrap="hard" required><%= udd.getComment() %></textarea><br><br>
         
         <input type="submit" name="btnSubmit" value="更新">
     </form>

@@ -30,6 +30,12 @@
         <input type="hidden" name="UserID" value ="<%= UserID %>" >
         <input type="submit" name="delete" value="削除" style="width:100px">
         </form>
+        <form action="SearchResult" method="post">
+        <input type="hidden" name="name" value="">
+        <input type="hidden" name="year" value="0">
+        <input type="hidden" name="type" value="0">
+        <input type="submit" name="searchresult" value="検索結果">
+        </form>
         <%=jh.home()%>
     </body>
     

@@ -15,7 +15,7 @@
     </head>
     <body>
     <h1>削除確認</h1>
-    以下の内容を削除します。よろしいですか？
+    以下の内容を削除します。よろしいですか？<br>
     名前:<%= udd.getName()%><br>
     生年月日:<%= udd.getBirthday()%><br>
     種別:<%= udd.getType()%><br>
