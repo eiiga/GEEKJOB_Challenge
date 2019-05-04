@@ -43,7 +43,7 @@ public class DB16_5 extends HttpServlet {
             
             try{
             Class.forName("com.mysql.jdbc.Driver").newInstance();
-            db_con = DriverManager.getConnection("jdbc:mysql://localhost:3306/DB16","eiigarashi","igarashiei0563");
+            db_con = DriverManager.getConnection("jdbc:mysql://localhost:3306/DB16","***","***");
             
             db_st1 = db_con.prepareStatement("select * from user ");
             
