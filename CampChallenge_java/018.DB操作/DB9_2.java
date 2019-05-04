@@ -48,7 +48,7 @@ public class DB9_2 extends HttpServlet {
             ResultSet db_data = null;
             try{
             Class.forName("com.mysql.jdbc.Driver").newInstance();
-            db_con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Challenge_db","eiigarashi","igarashiei0563");
+            db_con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Challenge_db","***","***");
             
             db_st1 = db_con.prepareStatement("insert into profiles(profilesID, name, tel, age, birthday)  value(?, ?, ?, ?, ?)");
             db_st1.setInt(1, id);
