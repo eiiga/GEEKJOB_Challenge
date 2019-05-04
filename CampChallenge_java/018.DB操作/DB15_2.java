@@ -46,7 +46,7 @@ public class DB15_2 extends HttpServlet {
             
             try{
             Class.forName("com.mysql.jdbc.Driver").newInstance();
-            db_con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Challenge_db","eiigarashi","igarashiei0563");
+            db_con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Challenge_db","***","***");
             
             db_st = db_con.prepareStatement("select * from profiles where name = ? and age = ? and birthday = ?");
             db_st.setString(1, name);
