@@ -30,7 +30,7 @@ public class UserDataDAO {
         try{
             con = DBManager.getConnection();
             st =  con.prepareStatement("INSERT INTO user_t(name,birthday,tell,type,comment,newDate) VALUES(?,?,?,?,?,?)");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Challenge_db","eiigarashi","igarashiei0563");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Challenge_db","***","***");
             st.setString(1, ud.getName());
             st.setString(2, ud.getBirthday());
             st.setString(3, ud.getTell());
