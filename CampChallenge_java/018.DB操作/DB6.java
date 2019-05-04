@@ -43,7 +43,7 @@ public class DB6 extends HttpServlet {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
             db_con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Challenge_db","***","***"); 
             db_st = db_con.prepareStatement(sql1);
-            db_st.setString(1, "五十嵐　瑛");
+            db_st.setString(1, "***");
             db_st.executeUpdate();
             db_st2 = db_con.prepareStatement(sql2);
             db_data = db_st2.executeQuery();
