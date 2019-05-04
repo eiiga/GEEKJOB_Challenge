@@ -49,7 +49,7 @@ public class DB16_3 extends HttpServlet {
             
             try{
             Class.forName("com.mysql.jdbc.Driver").newInstance();
-            db_con = DriverManager.getConnection("jdbc:mysql://localhost:3306/DB16","eiigarashi","igarashiei0563");
+            db_con = DriverManager.getConnection("jdbc:mysql://localhost:3306/DB16","***","***");
             
             db_st = db_con.prepareStatement("insert into user(ID, name, infoID, day, num) values(?,?,?,?,?)");
             db_st.setInt(1, ID);
