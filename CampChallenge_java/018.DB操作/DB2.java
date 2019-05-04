@@ -40,7 +40,7 @@ public class DB2 extends HttpServlet {
             String sql = "INSERT INTO profiles(profilesID, name, tel, age, birthday)  value(?, ?, ?, ?, ?)";
             try{
             Class.forName("com.mysql.jdbc.Driver").newInstance();
-            db_con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Challenge_db","eiigarashi","igarashiei0563");
+            db_con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Challenge_db","***","***");
             
             db_st = db_con.prepareStatement(sql);
             db_st.setInt(1, 6);
