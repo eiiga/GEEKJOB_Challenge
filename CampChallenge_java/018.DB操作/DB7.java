@@ -40,7 +40,7 @@ public class DB7 extends HttpServlet {
             String sql2 = "select * from profiles";
             try{
             Class.forName("com.mysql.jdbc.Driver").newInstance();
-            db_con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Challenge_db","eiigarashi","igarashiei0563"); 
+            db_con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Challenge_db","***","***"); 
             db_st = db_con.prepareStatement(sql1);
             db_st.setString(1, "松岡　修造");
             db_st.setInt(2, 48);
