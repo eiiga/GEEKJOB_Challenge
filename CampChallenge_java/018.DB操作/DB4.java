@@ -38,7 +38,7 @@ public class DB4 extends HttpServlet {
             ResultSet db_data = null;
             try{
             Class.forName("com.mysql.jdbc.Driver").newInstance();
-            db_con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Challenge_db","eiigarashi","igarashiei0563");
+            db_con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Challenge_db","***","***");
             db_st = db_con.prepareStatement("select * from profiles where profilesID = ? ");
             db_st.setInt(1,1);
             db_data = db_st.executeQuery();
